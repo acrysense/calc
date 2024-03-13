@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RE design interior - Главная</title>
+	<meta property="og:title" content="RE design interior - Главная">
+	<meta property="og:description" content="Описание">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="RE design interior - Главная">
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#000000">
+	<meta name="theme-color" content="#ffffff">
+	<!-- styles -->
+	<link rel="stylesheet" href="css/vendor.min.css">
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<!-- calculate -->
+	<div class="calculate" id="calculate">
+		<div class="calculate__container">
+			<div class="calculate__top">
+				<h2 class="calculate__heading">Рассчитайте стоимость ремонта</h2>
+			</div>
+			<form action="#" class="calculate__form">
+				<div class="calculate__wrapper">
+					<div class="calculate__item">
+						<span class="calculate__label">Тип помещения</span>
+						<div class="calculate__checkboxes">
+							<div class="radio-checkbox calculate__checkbox">
+								<input type="radio" id="type-01" name="type" class="radio-checkbox__input" data-name="type" data-value="1" checked>
+								<label for="type-01" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__body">
+										<span class="radio-checkbox__title">Евро 1-комнатная</span>
+										<span class="radio-checkbox__help">Студия</span>
+									</span>
+								</label>
+							</div>
+							<div class="radio-checkbox calculate__checkbox">
+								<input type="radio" id="type-02" name="type" class="radio-checkbox__input" data-name="type" data-value="2">
+								<label for="type-02" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__body">
+										<span class="radio-checkbox__title">Евро 2-комнатная</span>
+										<span class="radio-checkbox__help">1-комнатная</span>
+									</span>
+								</label>
+							</div>
+							<div class="radio-checkbox calculate__checkbox">
+								<input type="radio" id="type-03" name="type" class="radio-checkbox__input" data-name="type" data-value="3">
+								<label for="type-03" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__body">
+										<span class="radio-checkbox__title">Евро 3-комнатная</span>
+										<span class="radio-checkbox__help">2-комнатная</span>
+									</span>
+								</label>
+							</div>
+							<div class="radio-checkbox calculate__checkbox">
+								<input type="radio" id="type-04" name="type" class="radio-checkbox__input" data-name="type" data-value="4">
+								<label for="type-04" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__body">
+										<span class="radio-checkbox__title">Евро 4-комнатная</span>
+										<span class="radio-checkbox__help">3-комнатная</span>
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="calculate__item">
+						<span class="calculate__label">Меблировка</span>
+						<div class="calculate__checkboxes">
+							<div class="square-checkbox calculate__checkbox">
+								<input type="checkbox" id="furnishings" class="square-checkbox__input" data-name="furnishings" data-value="1">
+								<label for="furnishings" class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__body">
+										<span class="square-checkbox__title">Да</span>
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="calculate__item">
+						<span class="calculate__label">Площадь</span>
+						<div class="input-field calculate__input">
+							<div class="input-field__inner">
+								<input type="number" class="input-field__input" placeholder="44" min="1" max="10000">
+								<span class="input-field__help">м²</span>
+							</div>
+						</div>
+					</div>
+					<div class="calculate__item">
+						<span class="calculate__label">Вид ремонта</span>
+						<div class="calculate__checkboxes">
+							<div class="radio-checkbox calculate__checkbox">
+								<input type="radio" id="repair-type-01" name="repair-type" class="radio-checkbox__input" data-name="repair-type" data-value="1">
+								<label for="repair-type-01" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__body">
+										<span class="radio-checkbox__title">Косметический</span>
+									</span>
+								</label>
+							</div>
+							<div class="radio-checkbox calculate__checkbox">
+								<input type="radio" id="repair-type-02" name="repair-type" class="radio-checkbox__input" data-name="repair-type" data-value="2">
+								<label for="repair-type-02" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__body">
+										<span class="radio-checkbox__title">Инженерный</span>
+									</span>
+								</label>
+							</div>
+							<div class="radio-checkbox calculate__checkbox">
+								<input type="radio" id="repair-type-03" name="repair-type" class="radio-checkbox__input" data-name="repair-type" data-value="3" checked>
+								<label for="repair-type-03" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__body">
+										<span class="radio-checkbox__title">Капитальный</span>
+										<span class="radio-checkbox__help">С демонтажом</span>
+									</span>
+								</label>
+							</div>
+							<div class="radio-checkbox calculate__checkbox">
+								<input type="radio" id="repair-type-04" name="repair-type" class="radio-checkbox__input" data-name="repair-type" data-value="4">
+								<label for="repair-type-04" class="radio-checkbox__group">
+									<span class="radio-checkbox__icon"></span>
+									<span class="radio-checkbox__body">
+										<span class="radio-checkbox__title">Дизайнерский</span>
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="calculate__item">
+						<span class="calculate__label">Материалы</span>
+						<div class="calculate__checkboxes">
+							<div class="square-checkbox calculate__checkbox">
+								<input type="radio" id="materials-01" name="materials" class="square-checkbox__input" data-name="materials" data-value="1" checked>
+								<label for="materials-01" class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__body">
+										<span class="square-checkbox__title">Черновые</span>
+									</span>
+								</label>
+							</div>
+							<div class="square-checkbox calculate__checkbox">
+								<input type="radio" id="materials-02" name="materials" class="square-checkbox__input" data-name="materials" data-value="2">
+								<label for="materials-02" class="square-checkbox__group">
+									<span class="square-checkbox__icon"></span>
+									<span class="square-checkbox__body">
+										<span class="square-checkbox__title">Чистовые</span>
+									</span>
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="calculate__bottom">
+					<div class="calculate__total">
+						<div class="calculate__group">
+							<span class="calculate__help">Стоимость работ</span>
+							<span class="calculate__value calculate__value--price"><span>0</span> ₽</span>
+						</div>
+						<div class="calculate__group">
+							<span class="calculate__help">Материалы</span>
+							<span class="calculate__value calculate__value--materials"><span>0</span> ₽</span>
+						</div>
+						<div class="calculate__group">
+							<span class="calculate__help">Примерные сроки</span>
+							<span class="calculate__value calculate__value--deadlines"><span>0</span> дней</span>
+						</div>
+					</div>
+					<button class="calculate__btn">Оставить заявку на точный расчет</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- end of calculate -->
+	<!-- scripts -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
